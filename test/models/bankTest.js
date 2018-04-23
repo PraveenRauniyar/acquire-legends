@@ -13,7 +13,7 @@ describe('Bank test', () => {
     it('should reduce cash from bank',()=>{
       let kotakMahindra=new Bank(100000);
       let actual = kotakMahindra.getAvalibleCash();
-      assert.equal(actual,100000);
+      assert.equal(actual,10000);
       kotakMahindra.reduceMoney(1);
       actual = kotakMahindra.getAvalibleCash();
       assert.equal(actual,99999);
